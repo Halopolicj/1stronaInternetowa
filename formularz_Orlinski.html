@@ -6,7 +6,7 @@
   </head>
    <body bgcolor="green">
     <A href="index.html">Wróć</A><br>
-    <form>
+    <form method="post" action="mailto:morlinski65@gmail.com">
       <center><table>
         <tr height="100">
           <td colspan="4"><h1 align=center>Formularz o wiadomość</h1></td><br>
@@ -17,43 +17,64 @@
          <input name="Imie i nazwisko"></td>
           <td><center><b align="center">Numer telefonu</b></center>
           <br>
-         <input name="Numer telefonu"></td>
+         <input type="number"name="Numer telefonu"></td>
           <td><center><b align="center">Data urodzenia</b></center>
           <br>
-         <input name="Data urodzenia"></td>
+         <input type="date" name="Data urodzenia" style="width: 328px;"></td>
           <td><center><b align="center">Miejsce urodzenia</b></center>
           <br>
-         <input name="Miejsce urodzenia"></td>
+         <input name="Miejsce urodzenia" ></td>
         </tr>
         <tr>
           <td colspan="2" ><center><b align="center">Adres E-mail</b></center>
           <br>
-         <input name="E-mail" size="43"></td>
+         <input type="email" name="E-mail" size="43"></td>
           <td><center><b align="center">Hasło</b></center>
           <br>
-         <input name="Haslo" ></td>
+         <input type="password" name="Haslo" style="width: 328px;" ></td>
           <td><center><b align="center">Nazwa użytkownika</b></center>
           <br>
          <input name="Nazwa uzytkownika"></td>
         </tr>
         <tr>
-          <td colspan="2" rowspan="4"><center><b>Miejsce na wiadomość</b></center>
+          <td colspan="2" ><center><b>Miejsce na wiadomość</b></center>
           <br>
-          <input name="Miejsce na wiadomosc" size="43"></td>
-        </tr>
-        <tr>
-          <td><center><b>Czat</b></center>
-          <br>
-          <center><select>
-            <option value="Czat1">Czat 1</option>
-            <option value="Czat2">Czat 2</option>
-            <option value="Czat3">Czat 3</option>
-            <option value="Czat4">Czat 4</option>
-            <option value="Czat5">Czat 5</option>
-          </select></center></td>
-        </tr>
+          <input name="Miejsce na wiadomosc" size="43" style="height: 200px;"></td>
+        
+        
+          <td valign="top">
+              <center><b>Czat</b></center>
+              <br>
+              <center>
+                  <select style="width: 164px;">
+                      <option value="Czat1">Czat 1</option>
+                      <option value="Czat2">Czat 2</option>
+                      <option value="Czat3">Czat 3</option>
+                      <option value="Czat4">Czat 4</option>
+                      <option value="Czat5">Czat 5</option>
+                  </select>
+              </center>
+
+              <center><b>Okno czatu</b></center>
+              <input name="Tresc czatu" size="43" style="height: 160px;">
+          </td>
+
+            <td valign="top">
+                <center><b>Adresat</b></center>
+                <br>
+                <input name="Adresat (Opcjonalne)" size="20">
+            </td>
+        
+
+          </tr>
+          <tr>
+              <input type="reset" value="Reset" style="height: 40px; width: 200px;">
+              &nbsp;&nbsp;&nbsp;
+              <input type="submit" value="Wyślij" style="height: 40px; width: 200px;">
+          </tr>
       </table></center>  
     </form>
+
 
    </body>
 
